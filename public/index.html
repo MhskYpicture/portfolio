@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MHSKYDEV— Portfolio</title>
+    <link rel="preconnect" href="https://ppshlarvzhokrbolrhjt.supabase.co" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css?v=50">
+</head>
+<body>
+<div class="portfolio-grain" aria-hidden="true"><div></div></div>
+
+<main class="landing" id="top">
+    <section class="stage is-active" aria-label="MHSKYDEV">
+        <div class="landing-clouds" aria-hidden="true">
+            <div class="landing-cloud-track">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <svg class="signal-thread" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+            <path pathLength="1" d="M180 80 C 420 40, 520 260, 760 220 S 1180 80, 1320 180" />
+            <path pathLength="1" d="M40 520 C 280 380, 460 640, 720 540 S 1100 420, 1460 560" />
+            <path pathLength="1" d="M220 860 C 480 700, 640 820, 900 740 S 1200 640, 1500 760" />
+        </svg>
+
+        <header class="masthead">
+            <a class="wordmark" href="mailto:mhskydev@proton.me" aria-label="Email MHSKYDEV">
+                <span class="wordmark-text">
+                    <b>mhsky</b>
+                    <b>dev</b>
+                </span>
+                <svg class="wordmark-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M8 6.5 3.5 12 8 17.5"/>
+                    <path d="m16 6.5 4.5 5.5L16 17.5"/>
+                    <path d="M13.6 4.5 10.4 19.5"/>
+                </svg>
+            </a>
+            <p class="mast-status"><span class="badge-dot" aria-hidden="true"></span>Open for work!</p>
+            <button class="mobile-menu-trigger" id="menuTrigger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span class="menu-bar-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+            </button>
+        </header>
+
+        <div class="cutout camera" data-cutout tabindex="0">
+            <img src="cutouts/camera.png" alt="">
+        </div>
+        <div class="cutout keyboard" data-cutout tabindex="0">
+            <img src="cutouts/keyboard.webp" alt="">
+        </div>
+        <div class="cutout headphones" data-cutout tabindex="0">
+            <img src="cutouts/nothing-headphones.webp" alt="">
+        </div>
+        <div class="cutout computer" data-cutout tabindex="0" aria-label="Ordinateur">
+            <div class="laptop">
+                <div class="laptop-lid">
+                    <span class="laptop-cam" aria-hidden="true"></span>
+                    <div class="laptop-screen" id="laptopScreen">
+                        <div class="laptop-empty"><span>MHSKY</span></div>
+                        <span class="laptop-progress" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="laptop-hinge" aria-hidden="true"></div>
+                <div class="laptop-base" aria-hidden="true"><span class="laptop-track"></span></div>
+            </div>
+        </div>
+        <div class="cutout watch" data-cutout tabindex="0">
+            <img src="cutouts/watch.webp" alt="">
+        </div>
+
+        <div class="hero-copy">
+            <h1>
+                <span class="hero-line hero-line-primary">
+                    <span class="hero-word"><span>EDIT</span></span>
+                    <span class="project-reel-slot" aria-hidden="true">
+                        <span class="project-reel-ampersand">&amp;</span>
+                        <span class="project-reel" id="heroReel"></span>
+                    </span>
+                    <span class="hero-word"><span>CODING</span></span>
+                </span>
+                <span class="hero-line hero-slogan" id="heroSlogan">MOBILE PHOTOGRAPHER</span>
+            </h1>
+        </div>
+
+        <a class="scroll-cue" href="#about">MEET MAHAMKANE <i>↓</i></a>
+    </section>
+
+    <section class="about-page about-profile" id="about" aria-label="MAHAMKANE">
+        <div class="profile-main">
+            <div class="profile-copy">
+                <h2 data-reveal="profile-name">
+                    <span class="profile-name-line">ABOUT</span>
+                    <span class="profile-name-line">ME</span>
+                </h2>
+                <div class="profile-biography" data-reveal="profile-bio">
+                    <p>Hello '<span class="you-word">YOU</span>' moi c'est <strong>MAHAMKANE</strong>, photographe mobile agé de <strong>17 ans</strong> basé au Sénégal. Je capte l'âme du SENEGAL à travers mon objectif.</p>
+                    <p>En dehors de la photographie, je suis <strong>developpeur web, monteur de vidéo et désigneur</strong>. En gros je touche à tout ce qui tourne autour du monde numérique.</p>
+                </div>
+                <aside class="profile-thought" aria-label="Une pensée" data-reveal="profile">
+                    <div class="thought-machine" data-typed="0" data-typing="false">
+                        <img class="thought-machine-image" src="about/thought-typewriter.webp" alt="Machine à écrire" width="1280" height="1280" draggable="false">
+                        <blockquote class="thought-paper" id="thoughtPaper">Je capte l'âme du SENEGAL à travers mon objectif.</blockquote>
+                        <div class="thought-keys" aria-hidden="true"></div>
+                        <span class="thought-hammer" aria-hidden="true"></span>
+                    </div>
+                </aside>
+                <div class="profile-stats" data-reveal="profile">
+                    <p><b data-count="15">0</b><span>PROJECTS</span></p>
+                    <p><b data-count="450">0</b><span>PHOTOS TAKEN</span></p>
+                    <p><b data-count="7">0</b><span>YEARS XP</span></p>
+                </div>
+            </div>
+            <figure class="profile-portrait" data-reveal="profile">
+                <div class="profile-card" data-profile-card>
+                    <div class="profile-card__body">
+                        <div class="profile-card__tile">
+                            <span class="profile-card__sheen"></span>
+                            <span class="profile-card__holo">
+                                <span class="profile-card__holo-glow"></span>
+                                <span class="profile-card__holo-shift"></span>
+                            </span>
+                            <img class="profile-card__photo" src="photos/mhsky.jpg" alt="MAHAMKANE" width="2160" height="2880" draggable="false">
+                            <span class="profile-card__scrim"></span>
+                            <div class="profile-card__info">
+                                <h3 class="profile-card__name">MAHAMKANE</h3>
+                                <p class="profile-card__title">Photographe</p>
+                            </div>
+                            <span class="profile-card__tile-rim"></span>
+                        </div>
+                        <div class="profile-card__footer">
+                            <span class="profile-card__avatar">
+                                <img src="photos/mhsky.jpg" alt="" width="2160" height="2880" draggable="false">
+                            </span>
+                            <div class="profile-card__meta">
+                                <span class="profile-card__handle">@mhskydev</span>
+                                <span class="profile-card__status">Open for work</span>
+                            </div>
+                            <a class="profile-card__contact" href="#contact">
+                                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+                                Contact
+                            </a>
+                        </div>
+                        <span class="profile-card__glare"></span>
+                        <span class="profile-card__shade"></span>
+                        <span class="profile-card__rim"></span>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <section class="brand-marquee" aria-label="MHSKYDEV">
+        <div class="brand-marquee-window">
+            <div class="brand-marquee-track" id="brandTrack"></div>
+        </div>
+    </section>
+
+    <section class="projects-page work-projects" id="projects" aria-label="PROJECTS">
+        <div class="work-gallery">
+            <header class="work-gallery-masthead">
+                <span>SELECTED WORK</span>
+            </header>
+            <div class="work-gallery-heading">
+                <h2>WORKS<sup id="worksCount">0</sup></h2>
+            </div>
+            <div class="work-gallery-grid" id="worksGrid"></div>
+        </div>
+    </section>
+
+    <section class="projects-page work-projects shots-page" id="gallery" aria-label="GALLERY">
+        <div class="work-gallery">
+            <header class="work-gallery-masthead">
+                <span>MOBILE PHOTOGRAPHY · SÉNÉGAL</span>
+            </header>
+            <div class="work-gallery-heading">
+                <h2>SHOTS<sup id="shotsCount">0</sup></h2>
+            </div>
+            <div class="shots-carousel">
+                <div class="flex-carousel" id="flexCarousel" tabindex="0" role="region" aria-roledescription="carousel" aria-label="Galerie de photos">
+                    <div class="flex-carousel__caption" id="flexCaption"></div>
+                    <p class="flex-carousel__live" id="flexLive" aria-live="polite"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-page work-projects" id="shop" aria-label="SHOP">
+        <div class="work-gallery">
+            <header class="work-gallery-masthead">
+                <span>PICTURES, OVERLAYS, WALLPAPERS</span>
+            </header>
+            <div class="work-gallery-heading">
+                <h2>DROPS<sup id="dropsCount">0</sup></h2>
+            </div>
+            <div class="work-gallery-grid" id="dropsGrid"></div>
+        </div>
+    </section>
+
+    <section class="services-page" id="skills" aria-label="Compétences">
+        <header class="services-masthead" data-service-reveal>
+            <a class="wordmark" href="#top">
+                <b>mhsky</b>
+                <b>dev</b>
+            </a>
+        </header>
+        <div class="services-stage">
+            <div class="services-menu">
+                <h2 data-service-reveal><span></span>Photography · Web · Video · Design</h2>
+                <div class="services-names" id="skillList"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-page" id="contact" aria-label="Contact">
+        <header class="contact-masthead">
+            <a class="wordmark contact-signature" href="#top">
+                <b>mhsky</b>
+                <b>dev</b>
+            </a>
+
+        </header>
+        <div class="contact-studio">
+            <div class="contact-hero">
+                <div class="contact-copy">
+        
+                    <h2>
+                        <span class="title-window"><span>LET'S TALK</span></span>
+                    </h2>
+                    <p class="contact-brief">DM me if u want a collab or to appreciate my work!</p>
+                    <div class="hero-actions">
+                        <span class="bell-toggle" id="bellToggle" data-on="false">
+                            <button type="button" class="bell-toggle__button" aria-pressed="false" aria-label="Notify me">
+                                <span class="bell-toggle__bell" aria-hidden="true">
+                                    <span class="bell-toggle__glyph">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M6 16.5V10a6 6 0 0 1 12 0v6.5l1.6 2.3H4.4L6 16.5z"/>
+                                            <path d="M12 2.5V4"/>
+                                            <path d="M9.2 19.2a2.8 2.8 0 0 0 5.6 0"/>
+                                        </svg>
+                                    </span>
+                                    <svg class="bell-toggle__wave bell-toggle__wave--left" viewBox="0 0 14 14"><path d="M14 8a6 6 0 0 0-6 6"/><path d="M14 4A10 10 0 0 0 4 14"/></svg>
+                                    <svg class="bell-toggle__wave bell-toggle__wave--right" viewBox="0 0 14 14"><path d="M0 8a6 6 0 0 1 6 6"/><path d="M0 4a10 10 0 0 1 10 10"/></svg>
+                                    <span class="bell-toggle__badge"><span class="bell-toggle__digit">1</span></span>
+                                </span>
+                                <span class="bell-toggle__say" aria-hidden="true">
+                                    <span class="bell-toggle__face bell-toggle__face--off">Notify me</span>
+                                    <span class="bell-toggle__face bell-toggle__face--on">You'll be notified</span>
+                                </span>
+                            </button>
+                        </span>
+                        <a class="contact-tabs" href="mailto:mhskydev@proton.me">
+                            <span class="button-part"><span class="word-window"><span class="word-roll"><span>Email</span><span>Email</span></span></span></span>
+                            <span class="button-part"><span class="word-window"><span class="word-roll"><span>Me</span><span>Me</span></span></span></span>
+                        </a>
+                        <a class="contact-address" href="mailto:mhskydev@proton.me">mhskydev@proton.me</a>
+                    </div>
+                    <form id="messageForm" class="message-form" novalidate>
+                        <label>NOM
+                            <input id="msgName" name="name" type="text" required maxlength="80" autocomplete="name" placeholder="Ton nom">
+                        </label>
+                        <label class="message-field-email">EMAIL
+                            <div class="curved-input" id="emailCurve">
+                                <input id="msgEmail" class="curved-input__field" name="email" type="email" maxlength="180" autocomplete="email" placeholder="toi@email.com" aria-label="Email">
+                            </div>
+                        </label>
+                        <label>MESSAGE
+                            <textarea id="msgBody" name="body" required maxlength="1500" rows="4" placeholder="Une collab? Une question?"></textarea>
+                        </label>
+                        <button class="contact-tabs" id="messageSend" type="submit" aria-label="Envoyer le message">
+                            <span class="button-part"><span class="word-window"><span class="word-roll"><span>Send</span><span>Send</span></span></span></span>
+                            <span class="button-part"><span class="word-window"><span class="word-roll"><span>Message</span><span>Message</span></span></span></span>
+                        </button>
+                        <p class="message-status" id="messageStatus" role="status"></p>
+                    </form>
+                </div>
+                <div class="contact-socials" aria-label="Find me online">
+                    <a class="social-key" id="socInstagram" href="https://www.instagram.com/mhsky221?igsh=MXE0NGo3NjBsMTZkdA==" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm10 2H7a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm-5 3.2A3.8 3.8 0 1 1 8.2 12 3.8 3.8 0 0 1 12 8.2zm0 1.6A2.2 2.2 0 1 0 14.2 12 2.2 2.2 0 0 0 12 9.8zM17.4 6.4a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/></svg>
+                    </a>
+                    <a class="social-key" id="socFacebook" href="https://www.facebook.com/share/1BcG5tFy5A/" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h2.6l.4-3H13v-2c0-.6.4-1 1-1z"/></svg>
+                    </a>
+                    <a class="social-key" id="socTiktok" href="https://www.tiktok.com/@mhsky_221?_r=1&_t=ZM-92WV2MKpm1c" target="_blank" rel="noopener" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4c.6 2.4 2.2 4 4.6 4.4v2.4a7 7 0 0 1-4.2-1.4v6.2a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.6a3 3 0 1 0 2.1 2.9V4z"/></svg>
+                    </a>
+                    <a class="social-key" id="socGithub" href="https://github.com/mhskydev" target="_blank" rel="noopener" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-2.8 17.5c.5.1.6-.2.6-.5v-1.7c-2.5.5-3-1.1-3-1.1-.4-1-1-1.3-1-1.3-.8-.6.1-.6.1-.6.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.6.8.1-.6.3-1 .6-1.2-2-.2-4.1-1-4.1-4.4 0-1 .3-1.8.9-2.4-.1-.2-.4-1.2.1-2.4 0 0 .8-.3 2.5.9a8.7 8.7 0 0 1 4.6 0c1.7-1.2 2.5-.9 2.5-.9.5 1.2.2 2.2.1 2.4.6.6.9 1.4.9 2.4 0 3.4-2.1 4.2-4.1 4.4.3.3.6.8.6 1.6v2.4c0 .3.2.6.6.5A9 9 0 0 0 12 3z"/></svg>
+                    </a>
+                    <a class="social-key" id="socKofi" href="https://ko-fi.com/mhskypics" target="_blank" rel="noopener" aria-label="Ko-fi">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.881 8.948c-.773-4.085-4.859-4.593-4.859-4.593H.723c-.604 0-.679.798-.679.798s-.082 7.324-.022 11.822c.164 2.424 2.586 2.672 2.586 2.672s8.267-.023 11.966-.049c2.438-.426 2.683-2.566 2.658-3.734 4.352.24 7.422-2.831 6.649-6.916zm-11.062 3.511c-1.246 1.453-4.011 3.976-4.011 3.976s-.121.119-.31.023c-.076-.057-.108-.09-.108-.09-.443-.441-3.368-3.049-4.034-3.954-.709-.965-1.041-2.7-.091-3.71.951-1.01 3.005-1.086 4.363.407 0 0 1.565-1.782 3.468-.963 1.904.82 1.832 3.011.723 4.311zm6.173.478c-.928.116-1.682.028-1.682.028V7.284h1.77s1.971.551 1.971 2.638c0 1.913-.985 2.667-2.059 3.015z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="contact-foot">
+            <span>© 2026 MHSKYDEV — Tous droits réservés</span>
+        </footer>
+    </section>
+</main>
+
+<dialog class="mobile-menu" id="mobileMenu" aria-label="Menu">
+    <div class="mobile-menu-layout">
+        <header class="mobile-menu-header">
+            <span class="mobile-menu-wordmark">mhsky<br>dev</span>
+            <button class="mobile-menu-close" id="menuClose" type="button">
+                CLOSE
+                <span class="menu-close-glyph" aria-hidden="true"><i></i><i></i></span>
+            </button>
+        </header>
+        <nav class="mobile-menu-pages flowing-menu" id="flowingMenu" aria-label="Sections">
+            <ul class="flowing-menu__list">
+                <li class="flowing-menu__item">
+                    <a class="flowing-menu__link" href="#gallery">
+                        <span class="flowing-menu__label"><span class="flowing-menu__label-text">GALLERY</span></span>
+                    </a>
+                    <div class="flowing-menu__band" aria-hidden="true">
+                        <div class="flowing-menu__track">
+                            <div class="flowing-menu__part">
+                                <span class="flowing-menu__part-text">GALLERY</span>
+                                <span class="flowing-menu__image" style="background-image:url('cutouts/camera.png')"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="flowing-menu__item">
+                    <span class="flowing-menu__divider" aria-hidden="true"></span>
+                    <a class="flowing-menu__link" href="#projects">
+                        <span class="flowing-menu__label"><span class="flowing-menu__label-text">PROJECTS</span></span>
+                    </a>
+                    <div class="flowing-menu__band" aria-hidden="true">
+                        <div class="flowing-menu__track">
+                            <div class="flowing-menu__part">
+                                <span class="flowing-menu__part-text">PROJECTS</span>
+                                <span class="flowing-menu__image" style="background-image:url('cutouts/keyboard.webp')"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="flowing-menu__item">
+                    <span class="flowing-menu__divider" aria-hidden="true"></span>
+                    <a class="flowing-menu__link" href="#about">
+                        <span class="flowing-menu__label"><span class="flowing-menu__label-text">ABOUT</span></span>
+                    </a>
+                    <div class="flowing-menu__band" aria-hidden="true">
+                        <div class="flowing-menu__track">
+                            <div class="flowing-menu__part">
+                                <span class="flowing-menu__part-text">ABOUT</span>
+                                <span class="flowing-menu__image" style="background-image:url('photos/mhsky.jpg')"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="flowing-menu__item">
+                    <span class="flowing-menu__divider" aria-hidden="true"></span>
+                    <a class="flowing-menu__link" href="#shop">
+                        <span class="flowing-menu__label"><span class="flowing-menu__label-text">SHOP</span></span>
+                    </a>
+                    <div class="flowing-menu__band" aria-hidden="true">
+                        <div class="flowing-menu__track">
+                            <div class="flowing-menu__part">
+                                <span class="flowing-menu__part-text">SHOP</span>
+                                <span class="flowing-menu__image" style="background-image:url('cutouts/nothing-headphones.webp')"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="flowing-menu__item">
+                    <span class="flowing-menu__divider" aria-hidden="true"></span>
+                    <a class="flowing-menu__link" href="#contact">
+                        <span class="flowing-menu__label"><span class="flowing-menu__label-text">CONTACT</span></span>
+                    </a>
+                    <div class="flowing-menu__band" aria-hidden="true">
+                        <div class="flowing-menu__track">
+                            <div class="flowing-menu__part">
+                                <span class="flowing-menu__part-text">CONTACT</span>
+                                <span class="flowing-menu__image" style="background-image:url('cutouts/watch.webp')"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</dialog>
+
+<div class="morph-viewer" id="morphViewer" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Photo">
+    <button class="morph-viewer-close" id="mvClose" type="button" aria-label="Fermer">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+    </button>
+    <div class="morph-slider" id="mvStage" tabindex="0">
+        <p class="morph-slider-caption" id="mvCaption"></p>
+        <div class="morph-slider-controls">
+            <button class="morph-slider-btn" id="mvPrev" type="button" aria-label="Photo précédente">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M14.5 5.5 8 12l6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <button class="morph-slider-btn" id="mvNext" type="button" aria-label="Photo suivante">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M9.5 5.5 16 12l-6.5 6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+        </div>
+        <div class="morph-slider-indicators" id="mvDots"></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="flex-carousel.js?v=2"></script>
+<script src="morph-slider.js?v=2"></script>
+<script src="laptop-morph.js?v=3"></script>
+<script src="flowing-menu.js?v=1"></script>
+<script src="site.js?v=40"></script>
+<script src="contact-bits.js?v=2"></script>
+</body>
+</html>
